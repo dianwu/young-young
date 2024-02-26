@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FFF0F5; /* 淡粉紅色的背景 */
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+.calculator {
+    background-color: #FFC0CB; /* 粉紅色的計算器本體 */
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4); /* 立體陰影 */
+    width: 250px;
+}
+
+.display {
+    background-color: #FAEBD7; /* 古董白色的顯示區 */
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); /* 內陰影 */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.button {
+    background-color: #FF69B4; /* 熱情粉紅色的按鈕 */
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* 按鈕陰影 */
+}
+
+.button:hover {
+    background-color: #FF1493; /* 深粉紅色 */
+    transform: scale(1.1); /* 滑鼠懸停時放大 */
+}
+
+.zero {
+    grid-column: span 3;
+}
